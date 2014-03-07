@@ -6,247 +6,269 @@
     <script type="text/javascript" src="js/cta.js"></script>
   </head>
   <body>
+    <div class="data"></div>
 
-    <h3>Select all stops that you have been to</h3>
-    <div class="stop-selector" id="red-line">
+    <h3>Select all stops that you have been to. Click the "<span class="expand-button-for-instructions">+</span>" button to show a list of stops.</h3>
+    
+    <div class="analytic-buttons">
+      <button class="percentage-button">Calculate!</button>
+    </div>
+    
+    <div class="lines">
       <h3>Red Line <span class="expand">+</span></h3>
-      <ul>
-        <li>Howard</li>
-        <li>Jarvis</li>
-        <li>Morse</li>
-        <li>Loyola</li>
-        <li>Granville</li>
-        <li>Thorndale</li>
-        <li>Bryn Mawr</li>
-        <li>Berwyn</li>
-        <li>Argyle</li>
-        <li>Lawrence</li>
-        <li>Wilson</li>
-        <li>Sheridan</li>
-        <li>Addison</li>
-        <li>Belmont</li>
-        <li>Fullerton</li>
-        <li>North/Clybourn</li>
-        <li>Clark/Division</li>
-        <li>Chicago</li>
-        <li>Grand</li>
-        <li>Lake</li>
-        <li>Monroe</li>
-        <li>Jackson</li>
-        <li>Harrison</li>
-        <li>Roosevelt</li>
-        <li>Cermak/Chinatown</li>
-        <li>Sox-35th</li>
-        <li>47th</li>
-        <li>Garfield</li>
-        <li>63rd</li>
-        <li>69th</li>
-        <li>79th</li>
-        <li>87th</li>
-        <li>95th/Dan Ryan</li>
-      </ul>
+      <div class="stop-selector" id="red-line">
+        <ul>
+          <li>Howard</li>
+          <li>Jarvis</li>
+          <li>Morse</li>
+          <li>Loyola</li>
+          <li>Granville</li>
+          <li>Thorndale</li>
+          <li>Bryn Mawr</li>
+          <li>Berwyn</li>
+          <li>Argyle</li>
+          <li>Lawrence</li>
+          <li>Wilson</li>
+          <li>Sheridan</li>
+          <li>Addison</li>
+          <li>Belmont</li>
+          <li>Fullerton</li>
+          <li>North/Clybourn</li>
+          <li>Clark/Division</li>
+          <li>Chicago</li>
+          <li>Grand</li>
+          <li>Lake</li>
+          <li>Monroe</li>
+          <li>Jackson</li>
+          <li>Harrison</li>
+          <li>Roosevelt</li>
+          <li>Cermak/Chinatown</li>
+          <li>Sox-35th</li>
+          <li>47th</li>
+          <li>Garfield</li>
+          <li>63rd</li>
+          <li>69th</li>
+          <li>79th</li>
+          <li>87th</li>
+          <li>95th/Dan Ryan</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="blue-line">
+    <div class="lines">
       <h3>Blue Line <span class="expand">+</span></h3>
-      <ul>
-        <li>O'Hare</li>
-        <li>Rosemont</li>
-        <li>Cumberland</li>
-        <li>Harlem</li>
-        <li>Jefferson Park</li>
-        <li>Montrose</li>
-        <li>Irving Park</li>
-        <li>Addison</li>
-        <li>Belmont</li>
-        <li>Logan Square</li>
-        <li>California</li>
-        <li>Western</li>
-        <li>Damen</li>
-        <li>Division</li>
-        <li>Chicago</li>
-        <li>Grand</li>
-        <li>Clark/Lake</li>
-        <li>Washington</li>
-        <li>Monroe</li>
-        <li>Jackson</li>
-        <li>LaSalle</li>
-        <li>Clinton</li>
-        <li>UIC Halstead</li>
-        <li>Racine</li>
-        <li>Illinois Medical District</li>
-        <li>Western</li>
-        <li>Kedzie-Homan</li>
-        <li>Pulaski</li>
-        <li>Cicero</li>
-        <li>Austin</li>
-        <li>Oak Park</li>
-        <li>Harlem</li>
-        <li>Forest Park</li>
-      </ul>
+      <div class="stop-selector" id="blue-line">
+        <ul>
+          <li>O'Hare</li>
+          <li>Rosemont</li>
+          <li>Cumberland</li>
+          <li>Harlem</li>
+          <li>Jefferson Park</li>
+          <li>Montrose</li>
+          <li>Irving Park</li>
+          <li>Addison</li>
+          <li>Belmont</li>
+          <li>Logan Square</li>
+          <li>California</li>
+          <li>Western</li>
+          <li>Damen</li>
+          <li>Division</li>
+          <li>Chicago</li>
+          <li>Grand</li>
+          <li>Clark/Lake</li>
+          <li>Washington</li>
+          <li>Monroe</li>
+          <li>Jackson</li>
+          <li>LaSalle</li>
+          <li>Clinton</li>
+          <li>UIC Halstead</li>
+          <li>Racine</li>
+          <li>Illinois Medical District</li>
+          <li>Western</li>
+          <li>Kedzie-Homan</li>
+          <li>Pulaski</li>
+          <li>Cicero</li>
+          <li>Austin</li>
+          <li>Oak Park</li>
+          <li>Harlem</li>
+          <li>Forest Park</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="brown-line">
+    <div class="lines">
       <h3>Brown Line <span class="expand">+</span></h3>
-      <ul>
-        <li>Kimball</li>
-        <li>Kedzie</li>
-        <li>Francisco</li>
-        <li>Rockwell</li>
-        <li>Western</li>
-        <li>Damen</li>
-        <li>Montrose</li>
-        <li>Irving Park</li>
-        <li>Addison</li>
-        <li>Paulina</li>
-        <li>Southport</li>
-        <li>Belmont</li>
-        <li>Wellington</li>
-        <li>Diversey</li>
-        <li>Fullerton</li>
-        <li>Armitage</li>
-        <li>Sedgwick</li>
-        <li>Chicago</li>
-        <li>Merchandise Mart</li>
-        <li>Washington/Wells</li>
-        <li>Quincy</li>
-        <li>LaSalle/Van Buren</li>
-        <li>Harold Washington Library-State/Van Buren</li>
-        <li>Adams/Wabash</li>
-        <li>Madison/Wabash</li>
-        <li>Randolph/Wabash</li>
-        <li>State/Lake</li>
-        <li>Clark/Lake</li>
-      </ul>
+      <div class="stop-selector" id="brown-line">
+        <ul>
+          <li>Kimball</li>
+          <li>Kedzie</li>
+          <li>Francisco</li>
+          <li>Rockwell</li>
+          <li>Western</li>
+          <li>Damen</li>
+          <li>Montrose</li>
+          <li>Irving Park</li>
+          <li>Addison</li>
+          <li>Paulina</li>
+          <li>Southport</li>
+          <li>Belmont</li>
+          <li>Wellington</li>
+          <li>Diversey</li>
+          <li>Fullerton</li>
+          <li>Armitage</li>
+          <li>Sedgwick</li>
+          <li>Chicago</li>
+          <li>Merchandise Mart</li>
+          <li>Washington/Wells</li>
+          <li>Quincy</li>
+          <li>LaSalle/Van Buren</li>
+          <li>Harold Washington Library-State/Van Buren</li>
+          <li>Adams/Wabash</li>
+          <li>Madison/Wabash</li>
+          <li>Randolph/Wabash</li>
+          <li>State/Lake</li>
+          <li>Clark/Lake</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="green-line">
+    <div class="lines">
       <h3>Green Line <span class="expand">+</span></h3>
-      <ul>
-        <li>Harlem/Lake</li>
-        <li>Oak Park</li>
-        <li>Ridgeland</li>
-        <li>Austin</li>
-        <li>Central</li>
-        <li>Laramie</li>
-        <li>Cicero</li>
-        <li>Pulaski</li>
-        <li>Conservatory-Central Park Drive</li>
-        <li>Kedzie</li>
-        <li>California</li>
-        <li>Ashland</li>
-        <li>Morgan</li>
-        <li>Clinton</li>
-        <li>Clark/Lake</li>
-        <li>State/Lake</li>
-        <li>Randolph/Wabash</li>
-        <li>Madison/Wabash</li>
-        <li>Adams/Wabash</li>
-        <li>Roosevelt</li>
-        <li>35th-Bronzeville-IIT</li>
-        <li>Indiana</li>
-        <li>43rd</li>
-        <li>47th</li>
-        <li>51st</li>
-        <li>Garfield</li>
-        <li>King Drive</li>
-        <li>Cottage Grove</li>
-        <li>Halstead</li>
-        <li>Ashland/63rd</li>
-      </ul>
+      <div class="stop-selector" id="green-line">
+        <ul>
+          <li>Harlem/Lake</li>
+          <li>Oak Park</li>
+          <li>Ridgeland</li>
+          <li>Austin</li>
+          <li>Central</li>
+          <li>Laramie</li>
+          <li>Cicero</li>
+          <li>Pulaski</li>
+          <li>Conservatory-Central Park Drive</li>
+          <li>Kedzie</li>
+          <li>California</li>
+          <li>Ashland</li>
+          <li>Morgan</li>
+          <li>Clinton</li>
+          <li>Clark/Lake</li>
+          <li>State/Lake</li>
+          <li>Randolph/Wabash</li>
+          <li>Madison/Wabash</li>
+          <li>Adams/Wabash</li>
+          <li>Roosevelt</li>
+          <li>35th-Bronzeville-IIT</li>
+          <li>Indiana</li>
+          <li>43rd</li>
+          <li>47th</li>
+          <li>51st</li>
+          <li>Garfield</li>
+          <li>King Drive</li>
+          <li>Cottage Grove</li>
+          <li>Halstead</li>
+          <li>Ashland/63rd</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="orange-line">
+    <div class="lines">
       <h3>Orange Line <span class="expand">+</span></h3>
-      <ul>
-        <li>Midway</li>
-        <li>Pulaski</li>
-        <li>Kedzie</li>
-        <li>Western</li>
-        <li>35th/Archer</li>
-        <li>Ashland</li>
-        <li>Halstead</li>
-        <li>Roosevelt</li>
-        <li>Harold Washington Library-State/Van Buren</li>
-        <li>LaSalle/Van Buren</li>
-        <li>Quincy</li>
-        <li>Washington/Wells</li>
-        <li>Clark/Lake</li>
-        <li>State/Lake</li>
-        <li>Randolph/Wabash</li>
-        <li>Madison/Wabash</li>
-        <li>Adams/Wabash</li>
-      </ul>
+      <div class="stop-selector" id="orange-line">
+        <ul>
+          <li>Midway</li>
+          <li>Pulaski</li>
+          <li>Kedzie</li>
+          <li>Western</li>
+          <li>35th/Archer</li>
+          <li>Ashland</li>
+          <li>Halstead</li>
+          <li>Roosevelt</li>
+          <li>Harold Washington Library-State/Van Buren</li>
+          <li>LaSalle/Van Buren</li>
+          <li>Quincy</li>
+          <li>Washington/Wells</li>
+          <li>Clark/Lake</li>
+          <li>State/Lake</li>
+          <li>Randolph/Wabash</li>
+          <li>Madison/Wabash</li>
+          <li>Adams/Wabash</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="purple-line">
+    <div class="lines">
       <h3>Purple Line <span class="expand">+</span></h3>
-      <ul>
-        <li>Linden</li>
-        <li>Central</li>
-        <li>Noyes</li>
-        <li>Foster</li>
-        <li>Davis</li>
-        <li>Dempster</li>
-        <li>Main</li>
-        <li>South Blvd</li>
-        <li>Howard</li>  <!-- T: R Y-->
-        <li>Belmont</li>  <!-- T: R Br-->
-        <li>Wellington</li>
-        <li>Diversey</li>
-        <li>Fullerton</li> <!-- T: R Br-->
-        <li>Armitage</li>
-        <li>Sedgwick</li>
-        <li>Chicago</li>
-        <li>Merchandise Mart</li>
-        <li>Clark/Lake</li> <!-- T: Bl P O Gr Br-->
-        <li>State/Lake</li> <!-- T: R -->
-        <li>Randolph/Wabash</li>
-        <li>Madison/Wabash</li> <!-- T: P O Gr Br-->
-        <li>Adams/Wabash</li> <!-- T: P O Gr Br-->
-        <li>Harold Washington Library-State/Van Buren</li> <!-- T: Bl R P O Br-->
-        <li>LaSalle/Van Buren</li>
-        <li>Quincy</li>
-        <li>Washington/Wells</li> <!-- T: P O Br-->
-      </ul>
+      <div class="stop-selector" id="purple-line">
+        <ul>
+          <li>Linden</li>
+          <li>Central</li>
+          <li>Noyes</li>
+          <li>Foster</li>
+          <li>Davis</li>
+          <li>Dempster</li>
+          <li>Main</li>
+          <li>South Blvd</li>
+          <li>Howard</li>  <!-- T: R Y-->
+          <li>Belmont</li>  <!-- T: R Br-->
+          <li>Wellington</li>
+          <li>Diversey</li>
+          <li>Fullerton</li> <!-- T: R Br-->
+          <li>Armitage</li>
+          <li>Sedgwick</li>
+          <li>Chicago</li>
+          <li>Merchandise Mart</li>
+          <li>Clark/Lake</li> <!-- T: Bl P O Gr Br-->
+          <li>State/Lake</li> <!-- T: R -->
+          <li>Randolph/Wabash</li>
+          <li>Madison/Wabash</li> <!-- T: P O Gr Br-->
+          <li>Adams/Wabash</li> <!-- T: P O Gr Br-->
+          <li>Harold Washington Library-State /Van Buren</li> <!-- T: Bl R P O Br-->
+          <li>LaSalle/Van Buren</li>
+          <li>Quincy</li>
+          <li>Washington/Wells</li> <!-- T: P O Br-->
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="pink-line">
+    <div class="lines">
       <h3>Pink Line <span class="expand">+</span></h3>
-      <ul>
-        <li>54th/Cermak</li>
-        <li>Cicero</li>
-        <li>Kostner</li>
-        <li>Pulaski</li>
-        <li>Central Park</li>
-        <li>Kedzie</li>
-        <li>California</li>
-        <li>Western</li>
-        <li>Damen</li>
-        <li>18th</li>
-        <li>Polk</li>
-        <li>Ashland</li>
-        <li>Morgan</li>
-        <li>Clinton</li>
-        <li>Clark/Lake</li>
-        <li>State/Lake</li>
-        <li>Randolph/Wabash</li>
-        <li>Madison/Wabash</li>
-        <li>Adams/Wabash</li>
-        <li>Harold Washington Library-State/Van Buren</li>
-        <li>LaSalle/Van Buren</li>
-        <li>Quincy</li>
-        <li>Washington/Wells</li>
-      </ul>
+      <div class="stop-selector" id="pink-line">
+        <ul>
+          <li>54th/Cermak</li>
+          <li>Cicero</li>
+          <li>Kostner</li>
+          <li>Pulaski</li>
+          <li>Central Park</li>
+          <li>Kedzie</li>
+          <li>California</li>
+          <li>Western</li>
+          <li>Damen</li>
+          <li>18th</li>
+          <li>Polk</li>
+          <li>Ashland</li>
+          <li>Morgan</li>
+          <li>Clinton</li>
+          <li>Clark/Lake</li>
+          <li>State/Lake</li>
+          <li>Randolph/Wabash</li>
+          <li>Madison/Wabash</li>
+          <li>Adams/Wabash</li>
+          <li>Harold Washington Library-State/Van Buren</li>
+          <li>LaSalle/Van Buren</li>
+          <li>Quincy</li>
+          <li>Washington/Wells</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="stop-selector" id="yellow-line">
+    <div class="lines">
       <h3>Yellow Line <span class="expand">+</span></h3>
-      <ul>
-        <li>Dempster-Skokie</li>
-        <li>Oakton-Skokie</li>
-        <li>Howard</li>
-      </ul>
+      <div class="stop-selector" id="yellow-line">
+        <ul>
+          <li>Dempster-Skokie</li>
+          <li>Oakton-Skokie</li>
+          <li>Howard</li>
+        </ul>
+      </div>
     </div>
 
   </body>
