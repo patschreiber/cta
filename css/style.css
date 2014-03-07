@@ -14,6 +14,7 @@ li {
 
 button {
   padding: 5px 10px 5px 10px;
+  background-color: mustard
 }
 
 button.selection {
@@ -61,4 +62,8 @@ button.selection {
 
 .instructions {
   font-size: 18px;
+}
+
+#percentageChart {
+  display: none;
 }

@@ -30,10 +30,10 @@ $(document).ready(function() {
 
 
   $('.percentage-button').click(function() {
-    console.log(displayCtaLineCount);
+    $('#percentageChart').fadeIn("slow");
+
     //Find how many lines are currently available to ride.
     var n = $('.lines').find( $('li') ).length;
-    console.log(n);
     if (!displayCtaLineCount) {
       $('.data').append("<p class=\"current-train-lines\">There are " + n + " train stops currently on the CTA.</p>");
       displayCtaLineCount = true;
@@ -64,7 +64,6 @@ $(document).ready(function() {
       $('.percentRode').empty();
       $('.percentRode').append("...which amounts to you riding <span class=\"percent-num\">" + percentRode + "%</span> of all the train lines available on the CTA!");
     }
-
   });
 
 
@@ -102,11 +101,13 @@ $(document).ready(function() {
         strokeColor : "rgba(151,187,205,1)",
         pointColor : "rgba(151,187,205,1)",
         pointStrokeColor : "#fff",
-        data : [5,30,12,17,4,5,20,3]
+        data : [33,10,10,10,5,10,10,10]
       }
     ]
   }
 
+// LOOK AT THIS CONSOLE LOG TO GET INFO ON HOW TO GET A HANDLE ON THE DATA NUMBERS
+console.log(data.datasets);
   new Chart(context).Radar(data);
 
 });
