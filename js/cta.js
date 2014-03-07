@@ -92,4 +92,21 @@ $(document).ready(function() {
   });
 
 
+  context = document.getElementById('percentageChart').getContext('2d');
+  var Radar = {}
+  var data = {
+    labels : ["Red Line","Blue Line","Brown Line","Green Line","Orange Line","Purple Line","Pink Line","Yellow Line"],
+    datasets : [
+      {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : [5,30,12,17,4,5,20,3]
+      }
+    ]
+  }
+
+  new Chart(context).Radar(data);
+
 });

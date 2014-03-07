@@ -1,3 +1,8 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
 ul {
   list-style-type: circle;
   line-height: 1.5em;
@@ -52,4 +57,8 @@ button.selection {
 .expand-button-for-instructions {
   padding: 3px 8px 3px 8px;
   border: 1px solid #000;
+}
+
+.instructions {
+  font-size: 18px;
 }
