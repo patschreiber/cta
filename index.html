@@ -8,20 +8,20 @@
   </head>
   <body>
     <div class="data"></div>
-    <canvas id="percentageChart" width="400" height="400">Yo</canvas>
+    <canvas id="percentageChart" width="400" height="400"></canvas>
 
-    <div class="instructions">Select all stops that you have been to. Click the "<span class="expand-button-for-instructions">+</span>" button to show a list of stops.</div>
+    <div class="instructions">Select all stops that you have been to. Click the <span class="expand-button-for-instructions">+</span> button to show a list of stops.</div>
     
     <div class="analytic-buttons">
       <button class="percentage-button">Calculate!</button>
     </div>
 
     <div class="lines">
-      <h3>Red Line <span class="expand">+</span></h3>
+      <h3 class="red">Red Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="red-line">
         <button class="selection">Select/deselect all</button>
         <ul>
-          <li>Howard</li>
+          <li class="transfer">Howard</li>
           <li>Jarvis</li>
           <li>Morse</li>
           <li>Loyola</li>
@@ -34,17 +34,17 @@
           <li>Wilson</li>
           <li>Sheridan</li>
           <li>Addison</li>
-          <li>Belmont</li>
-          <li>Fullerton</li>
+          <li class="transfer">Belmont</li>
+          <li class="transfer">Fullerton</li>
           <li>North/Clybourn</li>
           <li>Clark/Division</li>
           <li>Chicago</li>
           <li>Grand</li>
-          <li>Lake</li>
+          <li class="transfer">Lake</li>
           <li>Monroe</li>
-          <li>Jackson</li>
+          <li class="transfer">Jackson</li>
           <li>Harrison</li>
-          <li>Roosevelt</li>
+          <li class="transfer">Roosevelt</li>
           <li>Cermak/Chinatown</li>
           <li>Sox-35th</li>
           <li>47th</li>
@@ -59,7 +59,7 @@
     </div>
 
     <div class="lines">
-      <h3>Blue Line <span class="expand">+</span></h3>
+      <h3 class="blue">Blue Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="blue-line">
         <button class="selection">Select/deselect all</button>
         <ul>
@@ -79,10 +79,10 @@
           <li>Division</li>
           <li>Chicago</li>
           <li>Grand</li>
-          <li>Clark/Lake</li>
-          <li>Washington</li>
+          <li class="transfer">Clark/Lake</li>
+          <li class="transfer">Washington</li>
           <li>Monroe</li>
-          <li>Jackson</li>
+          <li class="transfer">Jackson</li>
           <li>LaSalle</li>
           <li>Clinton</li>
           <li>UIC Halstead</li>
@@ -101,7 +101,7 @@
     </div>
 
     <div class="lines">
-      <h3>Brown Line <span class="expand">+</span></h3>
+      <h3 class="brown">Brown Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="brown-line">
         <button class="selection">Select/deselect all</button>
         <ul>
@@ -116,29 +116,29 @@
           <li>Addison</li>
           <li>Paulina</li>
           <li>Southport</li>
-          <li>Belmont</li>
+          <li class="transfer">Belmont</li>
           <li>Wellington</li>
           <li>Diversey</li>
-          <li>Fullerton</li>
+          <li class="transfer">Fullerton</li>
           <li>Armitage</li>
           <li>Sedgwick</li>
           <li>Chicago</li>
           <li>Merchandise Mart</li>
-          <li>Washington/Wells</li>
+          <li class="transfer">Washington/Wells</li>
           <li>Quincy</li>
           <li>LaSalle/Van Buren</li>
-          <li>Harold Washington Library-State/Van Buren</li>
-          <li>Adams/Wabash</li>
-          <li>Madison/Wabash</li>
+          <li class="transfer">Harold Washington Library-State/Van Buren</li>
+          <li class="transfer">Adams/Wabash</li>
+          <li class="transfer">Madison/Wabash</li>
           <li>Randolph/Wabash</li>
-          <li>State/Lake</li>
-          <li>Clark/Lake</li>
+          <li class="transfer">State/Lake</li>
+          <li class="transfer">Clark/Lake</li>
         </ul>
       </div>
     </div>
 
     <div class="lines">
-      <h3>Green Line <span class="expand">+</span></h3>
+      <h3 class="green">Green Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="green-line">
         <button class="selection">Select/deselect all</button>
         <ul>
@@ -153,15 +153,15 @@
           <li>Conservatory-Central Park Drive</li>
           <li>Kedzie</li>
           <li>California</li>
-          <li>Ashland</li>
+          <li class="transfer">Ashland</li>
           <li>Morgan</li>
-          <li>Clinton</li>
-          <li>Clark/Lake</li>
-          <li>State/Lake</li>
+          <li class="transfer">Clinton</li>
+          <li class="transfer">Clark/Lake</li>
+          <li class="transfer">State/Lake</li>
           <li>Randolph/Wabash</li>
-          <li>Madison/Wabash</li>
-          <li>Adams/Wabash</li>
-          <li>Roosevelt</li>
+          <li class="transfer">Madison/Wabash</li>
+          <li class="transfer">Adams/Wabash</li>
+          <li class="transfer">Roosevelt</li>
           <li>35th-Bronzeville-IIT</li>
           <li>Indiana</li>
           <li>43rd</li>
@@ -177,7 +177,7 @@
     </div>
 
     <div class="lines">
-      <h3>Orange Line <span class="expand">+</span></h3>
+      <h3 class="orange">Orange Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="orange-line">
         <button class="selection">Select/deselect all</button>
         <ul>
@@ -188,22 +188,22 @@
           <li>35th/Archer</li>
           <li>Ashland</li>
           <li>Halstead</li>
-          <li>Roosevelt</li>
-          <li>Harold Washington Library-State/Van Buren</li>
+          <li class="transfer">Roosevelt</li>
+          <li class="transfer">Harold Washington Library-State/Van Buren</li>
           <li>LaSalle/Van Buren</li>
           <li>Quincy</li>
-          <li>Washington/Wells</li>
-          <li>Clark/Lake</li>
-          <li>State/Lake</li>
+          <li class="transfer">Washington/Wells</li>
+          <li class="transfer">Clark/Lake</li>
+          <li class="transfer">State/Lake</li>
           <li>Randolph/Wabash</li>
-          <li>Madison/Wabash</li>
-          <li>Adams/Wabash</li>
+          <li class="transfer">Madison/Wabash</li>
+          <li class="transfer">Adams/Wabash</li>
         </ul>
       </div>
     </div>
 
     <div class="lines">
-      <h3>Purple Line <span class="expand">+</span></h3>
+      <h3 class="purple">Purple Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="purple-line">
         <button class="selection">Select/deselect all</button>
         <ul>
@@ -215,30 +215,30 @@
           <li>Dempster</li>
           <li>Main</li>
           <li>South Blvd</li>
-          <li>Howard</li>  <!-- T: R Y-->
-          <li>Belmont</li>  <!-- T: R Br-->
+          <li class="transfer">Howard</li>
+          <li class="transfer">Belmont</li>
           <li>Wellington</li>
           <li>Diversey</li>
-          <li>Fullerton</li> <!-- T: R Br-->
+          <li class="transfer">Fullerton</li>
           <li>Armitage</li>
           <li>Sedgwick</li>
           <li>Chicago</li>
           <li>Merchandise Mart</li>
-          <li>Clark/Lake</li> <!-- T: Bl P O Gr Br-->
-          <li>State/Lake</li> <!-- T: R -->
+          <li class="transfer">Clark/Lake</li>
+          <li class="transfer">State/Lake</li>
           <li>Randolph/Wabash</li>
-          <li>Madison/Wabash</li> <!-- T: P O Gr Br-->
-          <li>Adams/Wabash</li> <!-- T: P O Gr Br-->
-          <li>Harold Washington Library-State /Van Buren</li> <!-- T: Bl R P O Br-->
+          <li class="transfer">Madison/Wabash</li>
+          <li class="transfer">Adams/Wabash</li>
+          <li class="transfer">Harold Washington Library-State/Van Buren</li>
           <li>LaSalle/Van Buren</li>
           <li>Quincy</li>
-          <li>Washington/Wells</li> <!-- T: P O Br-->
+          <li class="transfer">Washington/Wells</li>
         </ul>
       </div>
     </div>
 
     <div class="lines">
-      <h3>Pink Line <span class="expand">+</span></h3>
+      <h3 class="pink">Pink Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="pink-line">
         <button class="selection">Select/deselect all</button>
         <ul>
@@ -253,30 +253,30 @@
           <li>Damen</li>
           <li>18th</li>
           <li>Polk</li>
-          <li>Ashland</li>
+          <li class="transfer">Ashland</li>
           <li>Morgan</li>
-          <li>Clinton</li>
-          <li>Clark/Lake</li>
-          <li>State/Lake</li>
+          <li class="transfer">Clinton</li>
+          <li class="transfer">Clark/Lake</li>
+          <li class="transfer">State/Lake</li>
           <li>Randolph/Wabash</li>
-          <li>Madison/Wabash</li>
-          <li>Adams/Wabash</li>
-          <li>Harold Washington Library-State/Van Buren</li>
+          <li class="transfer">Madison/Wabash</li>
+          <li class="transfer">Adams/Wabash</li>
+          <li class="transfer">Harold Washington Library-State/Van Buren</li>
           <li>LaSalle/Van Buren</li>
           <li>Quincy</li>
-          <li>Washington/Wells</li>
+          <li class="transfer">Washington/Wells</li>
         </ul>
       </div>
     </div>
 
     <div class="lines">
-      <h3>Yellow Line <span class="expand">+</span></h3>
+      <h3 class="yellow">Yellow Line <span class="expand">+</span></h3>
       <div class="stop-selector" id="yellow-line">
         <button class="selection">Select/deselect all</button>
         <ul>
           <li>Dempster-Skokie</li>
           <li>Oakton-Skokie</li>
-          <li>Howard</li>
+          <li class="transfer">Howard</li>
         </ul>
       </div>
     </div>
