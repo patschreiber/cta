@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title></title>
+    <title>CTA Stop Tracker</title>
     <link rel="stylesheet" href="css/style.css" />
     <script rel="text/javascript" src="lib/jquery-2.1.0.min.js"></script>
     <script rel="text/javascript" src="lib/chart.min.js"></script>
@@ -8,12 +8,15 @@
   </head>
   <body>
     <div class="data"></div>
-    <canvas id="percentageChart" width="400" height="400"></canvas>
+    <canvas class="chart" id="percentageChart" width="400" height="400"></canvas>
+    <canvas class="chart" id="barGraphChart" width="500" height="500"></canvas>
 
-    <div class="instructions">Select all stops that you have been to. Click the <span class="expand-button-for-instructions">+</span> button to show a list of stops.</div>
-    
-    <div class="analytic-buttons">
-      <button class="percentage-button">Calculate!</button>
+    <div id="">
+      <div class="instructions">Select all stops that you have been to. Click the <span class="expand-button-for-instructions">+</span> button to show a list of stops.</div>
+      
+      <div class="analytic-buttons">
+        <button class="percentage-button">Calculate!</button>
+      </div>
     </div>
 
     <div class="lines">

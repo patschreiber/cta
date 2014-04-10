@@ -75,12 +75,21 @@ $(document).ready(function() {
 
 
   $('.percentage-button').click(function() {
+    var rodeRed = $('#red-line').find( ".selected" ).length;
+    var rodeBlue = $('#blue-line').find( ".selected" ).length;
+    var rodeBrown = $('#brown-line').find( ".selected" ).length;
+    var rodeGreen = $('#green-line').find( ".selected" ).length;
+    var rodeOrange = $('#orange-line').find( ".selected" ).length;
+    var rodePurple = $('#purple-line').find( ".selected" ).length;
+    var rodePink = $('#pink-line').find( ".selected" ).length;
+    var rodeYellow = $('#yellow-line').find( ".selected" ).length;
 
 
-    generateChart();
+    generateChart(rodeRed, rodeBlue, rodeBrown, rodeGreen, rodeOrange, rodePurple, rodePink, rodeYellow);
+    generateBarGraphChart(rodeRed, rodeBlue, rodeBrown, rodeGreen, rodeOrange, rodePurple, rodePink, rodeYellow);
 
 
-    $('#percentageChart').fadeIn("slow");
+    $('.chart').fadeIn("slow");
 
     //Find how many lines are currently available to ride.
     var n = $('.lines').find( $('li') ).length;
@@ -128,9 +137,9 @@ $(document).ready(function() {
   };
 
 
-  function generateChart() {
+  function generateChart(r, bl, br, g, o, pu, pi, y) {
     context = document.getElementById('percentageChart').getContext('2d');
-    var Radar = {}
+    var Radar = {};
     var data = {
       labels : ["Red Line","Blue Line","Brown Line","Green Line","Orange Line","Purple Line","Pink Line","Yellow Line"],
       datasets : [
@@ -139,14 +148,40 @@ $(document).ready(function() {
           strokeColor : "rgba(151,187,205,1)",
           pointColor : "rgba(151,187,205,1)",
           pointStrokeColor : "#fff",
-          data : [33,10,10,10,5,10,10,10]
+          data : []
         }
       ]
     }
 
-    // LOOK AT THIS CONSOLE LOG TO GET INFO ON HOW TO GET A HANDLE ON THE DATA NUMBERS
-    console.log(data.datasets[0].data[4]);
+    data.datasets[0].data = [r, bl, br, g, o, pu, pi, y];
     new Chart(context).Radar(data);
+  }
+
+  function generateBarGraphChart(r, bl, br, g, o, pu, pi, y) {
+    barGraph = document.getElementById('barGraphChart').getContext('2d');
+    var Bar = {};
+    var data = {
+      labels : ["Red Line","Blue Line","Brown Line","Green Line","Orange Line","Purple Line","Pink Line","Yellow Line"],
+      datasets : [
+        {
+          fillColor : "rgba(151,187,205,0.5)",
+          strokeColor : "rgba(151,187,205,1)",
+          data : []
+        }
+      ]
+    }
+
+    Bar.defaults = { 
+      scaleShowLabels : true,
+      scaleShowGridLines : false,
+      scaleOverride : true,
+      scaleSteps : 33,
+      scaleStepWidth : 1,
+        scaleStartValue : 0
+    }
+
+    data.datasets[0].data = [r, bl, br, g, o, pu, pi, y];
+    new Chart(barGraph).Bar(data, Bar.defaults);
   }
 
 });

@@ -64,7 +64,7 @@ button.selection {
   font-size: 18px;
 }
 
-#percentageChart {
+.chart {
   display: none;
 }
 
